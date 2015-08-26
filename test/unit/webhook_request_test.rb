@@ -11,13 +11,7 @@ class WebhookRequestTest < ActiveSupport::TestCase
     assert_false webhook.force_push?
     assert_equal 'stevenboyd', webhook.pusher.name
     assert_equal 'steven.boyd@appfolio.com', webhook.pusher.email
+    assert_equal 'stevenboyd/github_watchdog', webhook.repo
     
   end
-  
-  private
-  
-  def sample_data
-    JSON.parse(sample_request)
-  end
-  
 end

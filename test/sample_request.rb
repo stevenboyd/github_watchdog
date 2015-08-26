@@ -1,13 +1,17 @@
 module SampleRequest
-  def sample_request
+  def sample_data(overrides = {})
+    JSON.parse(sample_request(overrides))
+  end
+  
+  def sample_request(branch: 'master', force_push: false)
     <<-JSON
 {
-  "ref": "refs/heads/master",
+  "ref": "refs/heads/#{branch}",
   "before": "54505eef5968a5285631ea6bad484ddce2023f14",
   "after": "52297078e9cfaa1f22413ab45263e921c5471198",
   "created": false,
   "deleted": false,
-  "forced": false,
+  "forced": #{force_push},
   "base_ref": null,
   "compare": "https://github.com/stevenboyd/github_watchdog/compare/54505eef5968...52297078e9cf",
   "commits": [

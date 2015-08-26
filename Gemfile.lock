@@ -33,8 +33,11 @@ GEM
     json (1.8.3)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    metaclass (0.0.4)
     mime-types (2.6.1)
     minitest (4.7.5)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
     multi_json (1.11.2)
     rack (1.5.5)
     rack-test (0.6.3)
@@ -77,6 +80,7 @@ PLATFORMS
 
 DEPENDENCIES
   minitest
+  mocha
   rails (= 4.0.13)
   sdoc
 

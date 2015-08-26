@@ -16,4 +16,8 @@ class WebhookRequest
     OpenStruct.new @data['pusher']
   end
   
+  def repo
+    @data['repository']['full_name']
+  end
+  
 end
