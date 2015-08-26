@@ -1,0 +1,2 @@
+branches_to_watch: ['master']
+people_to_email: ['dummy@example.com']
