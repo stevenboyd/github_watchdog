@@ -76,6 +76,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  minitest
   rails (= 4.0.13)
   sdoc
 
