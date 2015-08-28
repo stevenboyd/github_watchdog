@@ -15,5 +15,9 @@ class Settings
     def from_email
       @config['from_email']
     end
+    
+    def smtp_settings
+      @config['smtp_settings']
+    end
   end
 end
